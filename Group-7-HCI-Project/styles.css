@@ -1367,3 +1367,143 @@ textarea.form-input {
 .tenant-card.full-width {
   grid-column: 1 / -1;
 }
+
+/* ========== REGISTRATION FORM — CENTERED TITLE & 2-COLUMN LAYOUT ========== */
+.registration-page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.registration-main-card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(16px);
+  border-radius: 16px;
+  width: 100%;
+  max-width: 650px;
+  padding: 35px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.registration-title-badge {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 20px;
+  display: block;
+  text-align: center;
+  margin: 0 auto 25px auto;
+  letter-spacing: 0.5px;
+  max-width: fit-content;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-group.full-width {
+  width: 100%;
+}
+
+.registration-form .form-group label {
+  display: block;
+  font-size: 0.85rem;
+  color: #0B2E33;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.registration-form .form-group input {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid rgba(11, 46, 51, 0.25);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.85);
+  color: #0B2E33;
+  font-family: 'Lexend', sans-serif;
+  font-size: 0.9rem;
+}
+
+.registration-form .form-group input::placeholder {
+  color: rgba(11, 46, 51, 0.4);
+}
+
+.registration-form .form-group input:focus {
+  outline: none;
+  border-color: #0B2E33;
+  box-shadow: 0 0 0 2px rgba(11, 46, 51, 0.15);
+}
+
+.registration-form input[type="file"] {
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.button-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+  justify-content: flex-start;
+}
+
+.submit-btn {
+  padding: 12px 28px;
+  background-color: #0B2E33;
+  color: #E0F2F5;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Lexend', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #15484E;
+}
+
+.back-btn {
+  padding: 12px 28px;
+  background-color: transparent;
+  color: #0B2E33;
+  border: 2px solid #0B2E33;
+  border-radius: 10px;
+  font-family: 'Lexend', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.back-btn:hover {
+  background-color: rgba(11, 46, 51, 0.1);
+}
+
+/* Responsive — stack on mobile */
+@media (max-width: 520px) {
+  .form-row {
+    flex-direction: column;
+    gap: 14px;
+  }
+}
