@@ -1368,7 +1368,7 @@ textarea.form-input {
   grid-column: 1 / -1;
 }
 
-/* ========== REGISTRATION FORM — CENTERED TITLE & 2-COLUMN LAYOUT ========== */
+/* ========== REGISTRATION FORM — FINAL EXACT LAYOUT ========== */
 .registration-page-container {
   display: flex;
   align-items: center;
@@ -1383,8 +1383,8 @@ textarea.form-input {
   backdrop-filter: blur(16px);
   border-radius: 16px;
   width: 100%;
-  max-width: 650px;
-  padding: 35px;
+  max-width: 720px;
+  padding: 35px 40px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 
@@ -1393,33 +1393,32 @@ textarea.form-input {
   color: #ffffff;
   font-size: 0.95rem;
   font-weight: 600;
-  padding: 8px 20px;
+  padding: 8px 24px;
   border-radius: 20px;
   display: block;
   text-align: center;
   margin: 0 auto 25px auto;
   letter-spacing: 0.5px;
-  max-width: fit-content;
+  width: fit-content;
 }
 
 .registration-form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 18px;
 }
 
-.form-row {
+.form-two-columns {
   display: flex;
-  gap: 20px;
+  gap: 25px;
   width: 100%;
 }
 
-.form-row .form-group {
+.form-column {
   flex: 1;
-}
-
-.form-group.full-width {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .registration-form .form-group label {
@@ -1458,13 +1457,12 @@ textarea.form-input {
 
 .button-row {
   display: flex;
-  gap: 12px;
+  gap: 15px;
   margin-top: 8px;
-  justify-content: flex-start;
 }
 
 .submit-btn {
-  padding: 12px 28px;
+  padding: 12px 30px;
   background-color: #0B2E33;
   color: #E0F2F5;
   border: none;
@@ -1481,7 +1479,7 @@ textarea.form-input {
 }
 
 .back-btn {
-  padding: 12px 28px;
+  padding: 12px 30px;
   background-color: transparent;
   color: #0B2E33;
   border: 2px solid #0B2E33;
@@ -1500,10 +1498,9 @@ textarea.form-input {
   background-color: rgba(11, 46, 51, 0.1);
 }
 
-/* Responsive — stack on mobile */
-@media (max-width: 520px) {
-  .form-row {
+@media (max-width: 600px) {
+  .form-two-columns {
     flex-direction: column;
-    gap: 14px;
+    gap: 16px;
   }
 }
