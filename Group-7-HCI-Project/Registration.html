@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration Form — Serenity Apartment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="login-body">
+  <div class="registration-page-container">
+    <div class="registration-main-card">
+      
+      <div class="registration-title-badge">REGISTRATION FORM</div>
+
+      <form class="registration-form" action="#" method="post" enctype="multipart/form-data">
+        
+        <!-- Row 1 -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fullname">Tenant Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="unit">Unit Number</label>
+            <input type="text" id="unit" name="unit" placeholder="e.g. Unit 16" required>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="contact">Contact Number</label>
+            <input type="tel" id="contact" name="contact" placeholder="+63 XXX XXX XXXX" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="occupation">Occupation</label>
+            <input type="text" id="occupation" name="occupation" placeholder="Your occupation / work">
+          </div>
+          <div class="form-group">
+            <label for="id_upload">ID Submitted</label>
+            <input type="file" id="id_upload" name="id_upload" accept="image/*,.pdf" required>
+          </div>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="movein">Move-In Date</label>
+            <input type="date" id="movein" name="movein" required>
+          </div>
+          <div class="form-group">
+            <label for="leaseend">Lease End Date</label>
+            <input type="date" id="leaseend" name="leaseend" required>
+          </div>
+        </div>
+
+        <!-- Full Width Row -->
+        <div class="form-group full-width">
+          <label for="contract">Upload Contract (PDF)</label>
+          <input type="file" id="contract" name="contract" accept=".pdf" required>
+        </div>
+
+        <div class="button-row">
+          <button type="submit" class="submit-btn">Submit Registration</button>
+          <a href="Login.html" class="back-btn">Back to Login</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
